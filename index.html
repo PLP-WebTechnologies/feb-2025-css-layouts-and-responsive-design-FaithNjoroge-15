@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WanderLux - Luxury Destinations</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
+  <!-- AOS Library for Animations -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">WanderLux</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content" data-aos="fade-up">
+    <h1>Experience the World's Finest Places</h1>
+    <p>Discover luxurious resorts, beaches, and city escapes tailored for you.</p>
+    <a href="#destinations" class="btn">Explore Now</a>
+  </div>
+</section>
+
+<section id="destinations" class="destinations">
+  <h2 data-aos="fade-up">Our Curated Picks</h2>
+  <div class="grid-container">
+
+    <div class="card" data-aos="zoom-in">
+      <a href="https://images.unsplash.com/photo-1612478083562-5f87e7b89389?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" target="_blank">
+        <img src="https://images.unsplash.com/photo-1612478083562-5f87e7b89389?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Dubai">
+      </a>
+      <div class="card-content">
+        <h3>Burj Al Arab, Dubai</h3>
+        <p>7-star luxury experience with a private beach island.</p>
+      </div>
+    </div>
+
+    <div class="card" data-aos="zoom-in">
+      <a href="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" target="_blank">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Santorini">
+      </a>
+      <div class="card-content">
+        <h3>Canaves Oia Suites, Santorini</h3>
+        <p>Magical whitewashed cliffside luxury suites.</p>
+      </div>
+    </div>
+
+    <div class="card" data-aos="zoom-in">
+      <a href="https://images.unsplash.com/photo-1571079306402-8d2fc1bfc20c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" target="_blank">
+        <img src="https://images.unsplash.com/photo-1571079306402-8d2fc1bfc20c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Maldives">
+      </a>
+      <div class="card-content">
+        <h3>Baros Maldives</h3>
+        <p>Private villas in crystal-clear turquoise waters.</p>
+      </div>
+    </div>
+
+    <div class="card" data-aos="zoom-in">
+      <a href="https://images.unsplash.com/photo-1582582494700-3556a8f7407b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" target="_blank">
+        <img src="https://images.unsplash.com/photo-1582582494700-3556a8f7407b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="New York">
+      </a>
+      <div class="card-content">
+        <h3>The Plaza Hotel, New York</h3>
+        <p>Iconic luxury on Fifth Avenue at Central Park.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="about" class="about">
+  <h2 data-aos="fade-up">About WanderLux</h2>
+  <p data-aos="fade-up">At WanderLux, we believe that travel should be breathtaking, refined, and unforgettable. We handpick the world’s most luxurious spots to turn your journey into a dream.</p>
+</section>
+
+<section id="contact" class="contact">
+  <h2 data-aos="fade-up">Contact Us</h2>
+  <form data-aos="fade-up">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 WanderLux. Crafted with passion for travelers worldwide.</p>
+</footer>
+
+<!-- Scroll To Top Button -->
+<button id="scrollTopBtn" title="Go to top">↑</button>
+
+<!-- AOS Library Script -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+  // Scroll To Top
+  const scrollTopBtn = document.getElementById('scrollTopBtn');
+  window.onscroll = function() {
+    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+      scrollTopBtn.style.display = "block";
+    } else {
+      scrollTopBtn.style.display = "none";
+    }
+  };
+  scrollTopBtn.onclick = function() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }
+</script>
+
+</body>
+</html>
+
+
+
+
